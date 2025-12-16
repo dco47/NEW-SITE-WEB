@@ -1,26 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
 
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "remixicon/fonts/remixicon.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --prim-color: #0ea5ea;
+  --prim-light: #a9baf989;
+  --body-color: #0f172a;
+  --bg-color: #131c31;
+  --light-border: rgba(131, 131, 131, 0.3);
+  --prim-gradient: linear-gradient(
+      90deg,
+      rgb(47, 193, 255),
+      rgb(11, 209, 209) 51%,
+      rgb(14, 165, 234)
+    )
+    var(--x, 0) / 200%;
+  --prim-text-gradient: linear-gradient(
+      90deg,
+      rgb(47, 193, 255),
+      rgb(3, 255, 217) 31%,
+      rgb(14, 165, 234)
+    )
+    var(--x, 0) / 200%;
+
+  --white: #fff;
+  --black: #000;
+  --text-light: rgb(170, 170, 170);
+  --text: #fff;
+
+  --NotoSerif: "Noto Sans", sans-serif;
+  --Merienda: "Merienda", sans-serif;
+
+  --transition-regular: 0.3s;
+  --transition-slow: 0.6s;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.light {
+  --prim-color: #00a2ff;
+  --prim-light: #dbeafe;
+  --body-color: #e8edf1;
+  --bg-color: #ffffff;
+  --light-border: #0ea5ea;
+  --white: #000;
+  --black: #fff;
+  --text-light: rgb(0, 0, 0);
+  --text: #344161;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.Merienda {
+  font-family: var(--Merienda);
+}
+.NotoSerif {
+  font-family: var(--NotoSerif);
+}
+
+body,
+html,
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--white);
+  overflow-x: hidden;
+}
+/* NavBar */
+
+.menu-link a {
+  font-weight: 600;
+  transition: var(--transition-regular);
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+
+.menu-links {
+  font-size: 1rem;
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: var(--prim-color);
+  background: linear-gradient(
+    90deg rgb(14, 165, 234),
+    rgb(11, 209, 209) 51%,
+    rgb(14, 165, 234) var(--x, 0) / 250%
+  );
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  --x: 150% !important;
+  transition: 0.5s;
+  cursor: pointer;
 }
