@@ -32,7 +32,8 @@
   --text: #fff;
 
   --NotoSerif: "Noto Sans", sans-serif;
-  --Merienda: "Merienda", sans-serif;
+  --Unbounded: "Unbounded", sans-serif;
+  --Merienda: "Merienda", cursive;
 
   --transition-regular: 0.3s;
   --transition-slow: 0.6s;
@@ -55,6 +56,9 @@ html.light {
 }
 .NotoSerif {
   font-family: var(--NotoSerif);
+}
+.Unbounded {
+  font-family: var(--Unbounded);
 }
 
 body,
@@ -103,4 +107,101 @@ body {
   --x: 150% !important;
   transition: 0.5s;
   cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+}
+
+.hero-header {
+  height: 100vh;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25%;
+  width: 70%;
+  height: 80%;
+  background-image: url(../public/Hero-bg-shape1.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 600px;
+  height: 600px;
+  background-image: url(../public/Hero-bg-shape1.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.hero-inputs {
+  transition: var(--transition-regular);
+}
+.hero-inputs:hover {
+  box-shadow: 0px 0px 10px 0px #20b8ff7a;
+}
+.hero-inputs input {
+  color: var(--text);
+  &::placeholder {
+    color: var(--text);
+  }
+}
+
+.swiper-button-next .swiper-navigation-icon,
+.swiper-button-prev .swiper-navigation-icon {
+  display: none;
+}
+
+.swiper-btn i {
+  color: var(--white);
+}
+
+.hero-swiper-next {
+  left: 20% !important;
+}
+
+/* MQ Section */
+
+@media (max-width: 991px) {
+  .hero {
+    height: 100%;
+  }
+  .hero-swiper {
+    margin-top: 5%;
+  }
+  .hero-swiper-next,
+  .hero-swiper-prev {
+    top: 160% !important;
+  }
+  .hero-swiper-next {
+    left: 10% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero:before {
+    width: 500px;
+    top: 100%;
+  }
+  .hero:after {
+    width: 500px;
+  }
+  .hero-swiper-next,
+  .hero-swiper-prev {
+    top: 50% !important;
+  }
+  .hero-swiper-next {
+    left: 25% !important;
+  }
 }
