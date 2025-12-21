@@ -123,14 +123,16 @@ export default function Hero() {
                 {HotTopicData.map((topic, index) => (
                   <SwiperSlide key={index}>
                     <Link href="/UI-Components/Blogs/blog">
-                      <div className="relative hot-topic-card cursor-pointer">
+                      <div className="relative hot-topic-card cursor-pointer w-65 h-70">
                         <Image
                           src={topic.image}
                           alt={topic.title}
-                          className="w-full h-full rounded object-contain"
+                          width={180}
+                          height={120}
+                          className="w-full h-full rounded object-cover"
                         />
                         <div className="hot-topic-info absolute bottom-2 left-2">
-                            <h2 className="NotoSerif text-white">{topic.title}</h2>
+                            <h2 className="NotoSerif text-white text-sm">{topic.title}</h2>
                             <p className="text-gray-400">{topic.subtitle}</p>
                         </div>
                       </div>

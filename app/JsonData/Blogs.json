@@ -1,0 +1,89 @@
+[
+    {
+        "id": "1",
+        "title": "Are You Ready To Go Home After The Sunset View?",
+        "tag": "#Lifestyle",
+        "time": "5 mins read",
+        "name": "Joseph",
+        "date": "25 April 2025",
+        "image": "/highly-rated-articles1.webp",
+        "author": "/author1.webp"
+    },
+
+    {
+        "id": "2",
+        "title": "10 Easy Ways to Be Environmentally Conscious",
+        "tag": "#Travel",
+        "time": "7 mins read",
+        "name": "Rose",
+        "date": "12 May 2025",
+        "image": "/highly-rated-articles2.webp",
+        "author": "/author1.webp"
+    },
+
+    {
+        "id": "3",
+        "title": "How to Give Your Space a Parisian-Inspired Makeover",
+        "tag": "#Desing",
+        "time": "12 mins read",
+        "name": "Steven",
+        "date": "15 May 2025",
+        "image": "/highly-rated-articles3.webp",
+        "author": "/author2.webp"
+    },
+
+    {
+        "id": "4",
+        "title": "Facts About Business That Will Help You Success",
+        "tag": "#Desing",
+        "time": "89 mins read",
+        "name": "Harry",
+        "date": "27 June 2025",
+        "image": "/highly-rated-articles4.webp",
+        "author": "/author3.webp"
+    },
+
+    {
+        "id": "5",
+        "title": "The 60 Things To Do About Buiding A Plan",
+        "tag": "#Desing",
+        "time": "35 mins read",
+        "name": "Roney",
+        "date": "28 April 2025",
+        "image": "/highly-rated-articles5.webp",
+        "author": "/author4.webp"
+    },
+
+    {
+        "id": "6",
+        "title": "Master The Art Of Nature With These 7 Tips",
+        "tag": "#Travel",
+        "time": "3 mins read",
+        "name": "Joseph",
+        "date": "25 April 2025",
+        "image": "/highly-rated-articles6.webp",
+        "author": "/author4.webp"
+    },
+
+    {
+        "id": "7",
+        "title": "Your Light Is About To Stop Being Relevant",
+        "tag": "#Travel",
+        "time": "5 mins read",
+        "name": "Jeny",
+        "date": "25 April 2025",
+        "image": "/highly-rated-articles7.webp",
+        "author": "/author5.webp"
+    },
+
+    {
+        "id": "8",
+        "title": "Your Light Is About To Stop Being Relevant",
+        "tag": "#Travel",
+        "time": "8 mins read",
+        "name": "toby",
+        "date": "28 April 2025",
+        "image": "/highly-rated-articles8.webp",
+        "author": "/author2.webp"
+    }
+]

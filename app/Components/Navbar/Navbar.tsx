@@ -64,10 +64,10 @@ export default function Navbar() {
       ],
     },
     {
-      label: "Blogs",
+      label: "Blog",
       href: "/UI-Components/Blogs/Blog",
       dropdown: [
-        { label: "Blogs", href: "/app/UI-Components/Blogs/blog" },
+        { label: "Blog", href: "/app/UI-Components/Blogs/blog" },
         {
           label: "Blogs Details",
           href: "/app/UI-Components/Blogs/BlogDetails/2",
@@ -86,7 +86,7 @@ export default function Navbar() {
         { label: "Page 404", href: "/app/UI-Components/Pages/Page404" },
       ],
     },
-    { label: "Contact", href: "/app/UI-Components/Pages/Contact" },
+    { label: "Contact Us", href: "/app/UI-Components/Pages/Contact" },
   ];
 
   return (

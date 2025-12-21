@@ -168,7 +168,52 @@ body {
 }
 
 .hero-swiper-next {
-  left: 20% !important;
+  left: 15% !important;
+}
+
+/* Highly Rated Article */
+
+/* Title */
+
+.title h1 {
+  background: var(--prim-gradient);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.article-card {
+  transition: var(--transition-slow);
+}
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.link-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.link-btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--prim-color);
+  transition: var(--transition-slow);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.link-btn:hover:after {
+  width: 120px;
+  border-radius: 10px;
+  left: 50%;
+  opacity: 0.5s;
 }
 
 /* MQ Section */
