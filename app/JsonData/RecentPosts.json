@@ -1,0 +1,69 @@
+[
+    {
+        "Id": "Rp1",
+        "title": "10 Easy way ta be Environmentally Conscious",
+        "pere" : "take small but impactful",
+        "subtag": "Development",
+        "tags" : [
+            "Travel",
+            "Lifestyle"
+        ],
+        "time":  "7 mins read",
+        "image":"/Recent-posts1.webp",
+        "secondImage": "/mini-Recent-posts1.webp"
+    },
+    {
+        "Id": "Rp2",
+        "title": "How to go Your Space a Parisian-Inspired Makeover",
+        "pere" : "Infuse the timeless elegance of Parisian aesthetics into your living space",
+        "subtag": "Lifestyle",
+        "tags" : [
+            "Travel",
+            "Lifestyle"
+        ],
+        "time":  "12 mins read",
+        "image":"/Recent-posts2.webp",
+        "secondImage": "/mini-Recent-posts2.webp"
+    },
+    {
+        "Id": "Rp3",
+        "title": "Facts About Business That Will Help You Success",
+        "pere" : "Equip with essential business insight and proven strategies that can propel your toward unparalleled succes an growth ",
+        "subtag": "Development",
+        "tags" : [
+            "Travel",
+            "Lifestyle"
+        ],
+        "time":  "85 mins read",
+        "image":"/Recent-posts3.webp",
+        "secondImage": "/mini-Recent-posts3.webp"
+    },
+    {
+        "Id": "Rp4",
+        "title": "The 60 Things To Do About Building A plan",
+        "pere" : "Dive into realm of planning and strategic thinking, as you lay the groundwork for a dynamic and effectiv roadmap to achieve your aspiration",
+        "subtag": "Building",
+        "tags" : [
+            "Travel",
+            "Lifestyle"
+        ],
+        "time":  "35 mins read",
+        "image":"/Recent-posts4.webp",
+        "secondImage": "/mini-Recent-posts4.webp"
+    },
+    {
+        "Id": "Rp5",
+        "title": "Master The Art Of Nature With These 7 Tips",
+        "pere" : "Immerse yourself in the beauty of the naturel word, as you learn to connect with and appreciate nature's wonders through these enlightening tips",
+        "subtag": "Business",
+        "tags" : [
+            "Travel",
+            "Lifestyle"
+        ],
+        "time":  "25 mins read",
+        "image":"/Recent-posts5.webp",
+        "secondImage": "/mini-Recent-posts5.webp"
+    }
+
+    
+]

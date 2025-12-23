@@ -216,6 +216,45 @@ body {
   opacity: 0.5s;
 }
 
+/* Popular Tags */
+
+.tag-card {
+  transition: var(--transition-regular);
+}
+.tag-card:hover {
+  border: 1px solid var(--prim-color);
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 0px 10px #00a2ff80;
+  cursor: pointer;
+}
+
+.gallery-img {
+  filter: brightness(60%);
+  transition: var(--transition-regular);
+  cursor: pointer;
+}
+.gallery-img:hover {
+  filter: brightness(100%);
+}
+
+/* Footer */
+.footer-link,
+.footer-link2 {
+  transition: var(--transition-regular);
+}
+.footer-link:hover {
+  margin-left: 5px;
+}
+.footer-link2:hover {
+  transform: translateY(-5px);
+}
+.footer-input input {
+  color: var(--text);
+  &::placeholder {
+    color: var(--text);
+  }
+}
+
 /* MQ Section */
 
 @media (max-width: 991px) {

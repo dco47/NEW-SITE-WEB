@@ -10,7 +10,6 @@ export default function HighlyRatedArticl() {
     <div className="px-[8%] lg:px-[16%] py-10 text-(--white)">
       <div className="title">
         <h1 className="NotoSerif font-bold text-6xl md:text-7xl mt-4">
-          {" "}
           Editors picked
         </h1>
         <p className="text-(--text-light) text-lg NotoSerif mt-4 ">

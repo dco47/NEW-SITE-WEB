@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Merienda, Noto_Sans, Unbounded } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 const notoserif = Noto_Sans({
   variable: "--font-noto-serif",
@@ -49,6 +50,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
