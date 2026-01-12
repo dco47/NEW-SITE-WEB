@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1",
+        "img": "/project-1.webp",
+        "title": "Flyer Design",
+        "desc": "lorem ipseum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellenttesque suscipit."
+    },
+
+    {
+        "id": "2",
+        "img": "/project-2.webp",
+        "title": "Banner Design",
+        "desc": "lorem ipseum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellenttesque suscipit."
+    },
+
+    {
+        "id": "3",
+        "img": "/project-3.webp",
+        "title": "Disk Cover",
+        "desc": "lorem ipseum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellenttesque suscipit."
+    },
+    {
+        "id": "4",
+        "img": "/project-4.webp",
+        "title": "Pattern Design",
+        "desc": "lorem ipseum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellenttesque suscipit."
+    },
+    {
+        "id": "5",
+        "img": "/project-5.webp",
+        "title": "Logo Design",
+        "desc": "lorem ipseum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellenttesque suscipit."
+    },
+    {
+        "id": "6",
+        "img": "/project-3.webp",
+        "title": "Animal pattern",
+        "desc": "lorem ipseum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellenttesque suscipit."
+    }
+
+]

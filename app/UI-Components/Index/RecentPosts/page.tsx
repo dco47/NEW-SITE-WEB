@@ -150,7 +150,7 @@ export default function RecentPosts() {
                 </div>
               ))}
             </div>
-            {/* Follow us */}
+            {/* Last Comment */}
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border) mb-4">
               <div className="title mb-5 recent-post-title">
                 <h1 className="NotoSerif font-bold text-6xl md:text-2xl">
@@ -180,6 +180,7 @@ export default function RecentPosts() {
                 </div>
               ))}
             </div>
+            {/* Follow us */}
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border) mb-4">
               <div>
                 <Link

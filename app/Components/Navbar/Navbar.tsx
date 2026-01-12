@@ -59,34 +59,34 @@ export default function Navbar() {
         { label: "My Projects", href: "/UI-Components/Projects/Project" },
         {
           label: "Project Details",
-          href: "/app/UI-Components/Projects/ProjectDetails/2",
+          href: "/UI-Components/Projects/ProjectDeatails/2",
         },
       ],
     },
     {
       label: "Blog",
-      href: "/UI-Components/Blogs/Blog",
+      href: "/UI-Components/Blogs/blog",
       dropdown: [
-        { label: "Blog", href: "/app/UI-Components/Blogs/blog" },
+        { label: "Blog", href: "/UI-Components/Blogs/blog" },
         {
           label: "Blogs Details",
-          href: "/app/UI-Components/Blogs/BlogDetails/2",
+          href: "/UI-Components/Blogs/blog/blogDetails/2",
         },
       ],
     },
 
     {
       label: "Pages",
-      href: "/app/UI-Components/Pages/About",
+      href: "/app/UI-Components/Pages",
       dropdown: [
-        { label: "About", href: "/app/UI-Components/Pages/About" },
-        { label: "Login", href: "/app/UI-Components/Pages/Login" },
-        { label: "Signup", href: "/app/UI-Components/Pages/Signup" },
-        { label: "Contact", href: "/app/UI-Components/Pages/Contact" },
-        { label: "Page 404", href: "/app/UI-Components/Pages/Page404" },
+        { label: "About", href: "/UI-Components/Pages/About" },
+        { label: "Login", href: "/UI-Components/Pages/Login" },
+        { label: "Signup", href: "/UI-Components/Pages/Signup" },
+        { label: "Contact", href: "/UI-Components/Pages/Contact" },
+        { label: "Page 404", href: "/UI-Components/Pages/Page404" },
       ],
     },
-    { label: "Contact Us", href: "/app/UI-Components/Pages/Contact" },
+    { label: "Contact Us", href: "/UI-Components/Pages/Contact" },
   ];
 
   return (
@@ -119,7 +119,7 @@ export default function Navbar() {
                     {" "}
                     {link.label} <i className="ri-arrow-down-s-line"></i>
                   </Link>
-                  <div className="absolute left-0 top-10 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 bg-(--bg-color) z-50 shadow-xl border border-gray-50/10 rounded-lg py-2 w-40">
+                  <div className="absolute left-0 top-10 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 bg-(--bg-color) z-50 shadow-xl border border-gray-50/10 rounded-lg min-w-42.5">
                     {link.dropdown.map((item) => (
                       <Link
                         key={item.label}

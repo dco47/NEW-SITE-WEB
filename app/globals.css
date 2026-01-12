@@ -158,6 +158,24 @@ body {
   }
 }
 
+/* Projects */
+.projects-section:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000000bb 10%, #00000000);
+}
+
+.projects-section .project-image {
+  transition: var(--transition-regular);
+  transform: scale(1.1);
+}
+.projects-section:hover .project-image {
+  transform: scale(1.2);
+}
+
 .swiper-button-next .swiper-navigation-icon,
 .swiper-button-prev .swiper-navigation-icon {
   display: none;
@@ -237,6 +255,14 @@ body {
   filter: brightness(100%);
 }
 
+.brands-swiper {
+  padding: 20px 20px !important;
+  border-radius: 50px;
+}
+.brands-swiper img {
+  transition: var(--transition-regular);
+}
+
 /* Footer */
 .footer-link,
 .footer-link2 {
@@ -253,6 +279,58 @@ body {
   &::placeholder {
     color: var(--text);
   }
+}
+
+/* Login page & Register */
+.register-box::after {
+  content: "";
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background-image: url(../public/login-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: 0;
+  left: 18%;
+  opacity: 0.1;
+}
+
+.register-box::before {
+  content: "";
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background-image: url(../public/login-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  bottom: -50px;
+  left: 68%;
+  opacity: 0.3;
+}
+
+.login-input {
+  color: var(--white);
+  &::placeholder {
+    color: var(--white);
+  }
+}
+
+/* Contact Page */
+.contact-form input,
+.contact-form textarea {
+  color: var(--text-light);
+
+  &::placeholder {
+    color: var(--text-light);
+  }
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid var(--prim-color);
+  color: var(--white);
 }
 
 /* MQ Section */

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="p-0 md:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div>
               <Link
-                href="/"
+                href="/" 
                 className="text-3xl font-bold Merienda text-(--prim-color)"
               >
                 Dco<span className="text-(--white)">Tech</span>

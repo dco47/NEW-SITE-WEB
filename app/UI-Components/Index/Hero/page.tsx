@@ -84,7 +84,7 @@ export default function Hero() {
             <h2 className="text-(--text) NotoSerif text-2xl font-bold">
               Hot Topics
             </h2>
-            <p className="text-(--text-light">
+            <p className="text-(--text-light)">
               Do not miss out on the latest news about Travel tips, Hotels
               review, Food guide...
             </p>
