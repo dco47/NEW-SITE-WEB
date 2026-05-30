@@ -3,10 +3,55 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+type NavLink = {
+  label: string;
+  href: string;
+  dropdown?: { label: string; href: string }[];
+};
+
+const navLinks: NavLink[] = [
+  { label: "Accueil", href: "/" },
+  {
+    label: "Projets",
+    href: "/UI-Components/Projects/Project",
+    dropdown: [
+      { label: "Mes Projets", href: "/UI-Components/Projects/Project" },
+      {
+        label: "Détails du projet",
+        href: "/UI-Components/Projects/ProjectDeatails/2",
+      },
+    ],
+  },
+  {
+    label: "Blog",
+    href: "/UI-Components/Blogs/blog",
+    dropdown: [
+      { label: "Blog", href: "/UI-Components/Blogs/blog" },
+      {
+        label: "Détails de l'article",
+        href: "/UI-Components/Blogs/blog/blogDetails/2",
+      },
+    ],
+  },
+
+  {
+    label: "Pages",
+    href: "",
+    dropdown: [
+      { label: "À propos", href: "/UI-Components/Pages/About" },
+      { label: "Connexion", href: "/UI-Components/Pages/Login" },
+      { label: "Inscription", href: "/UI-Components/Pages/Signup" },
+      { label: "Contact", href: "/UI-Components/Pages/Contact" },
+      { label: "Page 404", href: "/UI-Components/Pages/Page404" },
+    ],
+  },
+  { label: "Contactez-nous", href: "/UI-Components/Pages/Contact" },
+];
+
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState<Record<string, boolean>>(
-    {}
+    {},
   );
   const [isFixed, setIsFixed] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
@@ -44,51 +89,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handlescroll);
   }, []);
 
-  type NavLink = {
-    label: string;
-    href: string;
-    dropdown?: { label: string; href: string }[];
-  };
-
-  const navLinks: NavLink[] = [
-    { label: "Home", href: "/" },
-    {
-      label: "Projects",
-      href: "/UI-Components/Projects/Project",
-      dropdown: [
-        { label: "My Projects", href: "/UI-Components/Projects/Project" },
-        {
-          label: "Project Details",
-          href: "/UI-Components/Projects/ProjectDeatails/2",
-        },
-      ],
-    },
-    {
-      label: "Blog",
-      href: "/UI-Components/Blogs/blog",
-      dropdown: [
-        { label: "Blog", href: "/UI-Components/Blogs/blog" },
-        {
-          label: "Blogs Details",
-          href: "/UI-Components/Blogs/blog/blogDetails/2",
-        },
-      ],
-    },
-
-    {
-      label: "Pages",
-      href: "/app/UI-Components/Pages",
-      dropdown: [
-        { label: "About", href: "/UI-Components/Pages/About" },
-        { label: "Login", href: "/UI-Components/Pages/Login" },
-        { label: "Signup", href: "/UI-Components/Pages/Signup" },
-        { label: "Contact", href: "/UI-Components/Pages/Contact" },
-        { label: "Page 404", href: "/UI-Components/Pages/Page404" },
-      ],
-    },
-    { label: "Contact Us", href: "/UI-Components/Pages/Contact" },
-  ];
-
   return (
     <>
       <div
@@ -98,11 +98,11 @@ export default function Navbar() {
             : ""
         }`}
       >
-        <div className="flex items-center justify-between px-[8%] lg:px-[16%] py-5">
+        <div className="section-container flex items-center justify-between py-4 lg:py-5">
           {/* Logo */}
           <Link
             href="/"
-            className="text-3xl font-bold Merienda text-(--prim-color)"
+            className="text-2xl sm:text-3xl font-bold Merienda text-(--prim-color) shrink-0"
           >
             Dco<span className="text-(--white)">Tech</span>
           </Link>
@@ -124,7 +124,7 @@ export default function Navbar() {
                       <Link
                         key={item.label}
                         href={item.href}
-                        className="block px-4 py-2 rounded-md hover:text-(--prim-color) transition-all"
+                        className="block px-4 py-2 rounded-md hover:text-(--prim-color)! transition-all"
                       >
                         <i className="bi bi-gear text-xs"></i> {item.label}
                       </Link>
@@ -135,14 +135,14 @@ export default function Navbar() {
                 <Link key={link.label} href={link.href}>
                   {link.label}
                 </Link>
-              )
+              ),
             )}
           </nav>
           {/* Right Section */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <div
               onClick={toggleDropdown}
-              className="mode flex items-center justify-center cursor-pointer w-10 h-10 bg-(--text-light) rounded-full relative overflow-hidden"
+              className="mode flex items-center justify-center cursor-pointer w-9 h-9 sm:w-10 sm:h-10 bg-(--text-light) rounded-full relative overflow-hidden shrink-0"
             >
               <i
                 className={`bi bi-brightness-high-fill text-(--white) text-lg transition-all duration-300 ${
@@ -155,126 +155,129 @@ export default function Navbar() {
                 }`}
               ></i>
             </div>
-            <Link href="/">
-              <button className="bg-linear-to-r from-indigo-500 to-purple-600 text-white font-medium px-5 py-2 rounded-lg shadow-md hover:from-indigo-600 hover:to-purple-700 transition-all cursor-pointer">
-                Log-in
+            <Link href="/" className="hidden sm:block">
+              <button className="bg-linear-to-r from-indigo-500 to-purple-600 text-white font-medium px-4 sm:px-5 py-2 rounded-lg shadow-md hover:from-indigo-600 hover:to-purple-700 transition-all cursor-pointer text-sm sm:text-base whitespace-nowrap">
+                Se Connecter
               </button>
             </Link>
             <button
+              type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden text-(--white) text-2xl"
+              aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+              aria-expanded={mobileMenuOpen}
+              className="lg:hidden group flex h-10 w-10 items-center justify-center rounded-lg border border-(--light-border) bg-(--bg-color)/50 text-(--white) transition-all duration-300 hover:border-(--prim-color) hover:text-(--prim-color)"
             >
-              <i
-                className={`ri-${
-                  mobileMenuOpen ? "close-line" : "menu-3-line"
-                }`}
-              ></i>
+              <span className="relative flex h-4 w-5 flex-col justify-between">
+                <span
+                  className={`block h-[2px] w-full rounded-full bg-current transition-all duration-300 ease-in-out ${
+                    mobileMenuOpen ? "translate-y-[7px] rotate-45" : ""
+                  }`}
+                />
+                <span
+                  className={`block h-[2px] w-full rounded-full bg-current transition-all duration-300 ease-in-out ${
+                    mobileMenuOpen ? "opacity-0 scale-x-0" : ""
+                  }`}
+                />
+                <span
+                  className={`block h-[2px] w-full rounded-full bg-current transition-all duration-300 ease-in-out ${
+                    mobileMenuOpen ? "-translate-y-[7px] -rotate-45" : ""
+                  }`}
+                />
+              </span>
             </button>
           </div>
         </div>
         {/* Mobile Nav */}
         <div
-          className={`lg:hidden bg-(--bg-color) border-t border-gray-700 overflow-hidden transition-all duration-500 ${
+          className={`lg:hidden bg-(--bg-color) border-t overflow-hidden transition-all duration-500 ${
+            darkMode ? "border-gray-700" : "border-gray-300"
+          } ${
             mobileMenuOpen
-              ? "max-h-700px opacity-100 py-4"
-              : " max-h-0 opacity-0 py-0"
+              ? "max-h-[700px] opacity-100 py-4"
+              : "max-h-0 opacity-0 py-0"
           }`}
         >
-          {/* Mobile Nav */}
-          <div
-            className={`lg:hidden bg-(--bg-color) border-t transition-all duration-500 ${
-              darkMode ? "border-gray-700" : "border-gray-300"
-            } ${
-              mobileMenuOpen
-                ? "max-h-700px opacity-100 py-4"
-                : "max-h-0 opacity-0 py-0"
-            }`}
-          >
-            <nav className="flex flex-col px-[8%] space-y-2">
-              {navLinks.map((link) => (
-                <div key={link.label}>
-                  {link.dropdown ? (
-                    // Liens avec dropdown
-                    <div>
-                      <button
-                        onClick={() => toggleDropdowns(link.label)}
-                        className={`flex items-center justify-between w-full text-left py-3 px-4 rounded-lg transition-all ${
-                          darkMode
-                            ? "hover:bg-(--text-light) text-(--white)"
-                            : "hover:bg-gray-100 text-gray-900"
-                        }`}
-                      >
-                        <span className="font-medium">{link.label}</span>
-                        <i
-                          className={`ri-arrow-down-s-line transition-transform duration-300 ${
-                            openDropdowns[link.label]
-                              ? "rotate-180"
-                              : "rotate-0"
-                          } ${darkMode ? "text-(--white)" : "text-gray-900"}`}
-                        ></i>
-                      </button>
-
-                      {/* Sous-menu */}
-                      <div
-                        className={`overflow-hidden transition-all duration-300 ${
-                          openDropdowns[link.label]
-                            ? "max-h-96 opacity-100 mt-2"
-                            : "max-h-0 opacity-0"
-                        }`}
-                      >
-                        <div
-                          className={`rounded-lg py-2 ${
-                            darkMode
-                              ? "bg-(--text-light) bg-opacity-20"
-                              : "bg-gray-100"
-                          }`}
-                        >
-                          {link.dropdown.map((item) => (
-                            <Link
-                              key={item.label}
-                              href={item.href}
-                              onClick={() => {
-                                setMobileMenuOpen(false);
-                                setOpenDropdowns({});
-                              }}
-                              className={`block py-2 px-6 transition-all hover:translate-x-1 ${
-                                darkMode
-                                  ? "text-(--white) hover:text-(--prim-color)"
-                                  : "text-gray-700 hover:text-indigo-600"
-                              }`}
-                            >
-                              <i
-                                className={`bi bi-gear text-xs mr-2 ${
-                                  darkMode ? "text-(--white)" : "text-gray-600"
-                                }`}
-                              ></i>
-                              {item.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    // Liens simples
-                    <Link
-                      href={link.href}
-                      onClick={() => {
-                        setMobileMenuOpen(false);
-                        setOpenDropdowns({});
-                      }}
-                      className={`block py-3 px-4 rounded-lg font-medium transition-all ${
+          <nav className="flex flex-col section-container space-y-2">
+            {navLinks.map((link) => (
+              <div key={link.label}>
+                {link.dropdown ? (
+                  <div>
+                    <button
+                      onClick={() => toggleDropdowns(link.label)}
+                      className={`flex items-center justify-between w-full text-left py-3 px-4 rounded-lg transition-all ${
                         darkMode
-                          ? "text-(--white) hover:bg-(--text-light) hover:text-(--prim-color)"
-                          : "text-gray-900 hover:bg-gray-100 hover:text-indigo-600"
+                          ? "hover:bg-(--text-light) text-(--white)"
+                          : "hover:bg-gray-100 text-gray-900"
                       }`}
                     >
-                      {link.label}
-                    </Link>
-                  )}
-                </div>
-              ))}
-            </nav>
-          </div>
+                      <span className="font-medium">{link.label}</span>
+                      <i
+                        className={`ri-arrow-down-s-line transition-transform duration-300 ${
+                          openDropdowns[link.label]
+                            ? "rotate-180"
+                            : "rotate-0"
+                        } ${darkMode ? "text-(--white)" : "text-gray-900"}`}
+                      ></i>
+                    </button>
+
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${
+                        openDropdowns[link.label]
+                          ? "max-h-96 opacity-100 mt-2"
+                          : "max-h-0 opacity-0"
+                      }`}
+                    >
+                      <div
+                        className={`rounded-lg py-2 ${
+                          darkMode
+                            ? "bg-(--text-light) bg-opacity-20"
+                            : "bg-gray-100"
+                        }`}
+                      >
+                        {link.dropdown.map((item) => (
+                          <Link
+                            key={item.label}
+                            href={item.href}
+                            onClick={() => {
+                              setMobileMenuOpen(false);
+                              setOpenDropdowns({});
+                            }}
+                            className={`block py-2 px-6 transition-all hover:translate-x-1 ${
+                              darkMode
+                                ? "text-(--white) hover:text-(--prim-color)"
+                                : "text-gray-700 hover:text-indigo-600"
+                            }`}
+                          >
+                            <i
+                              className={`bi bi-gear text-xs mr-2 ${
+                                darkMode ? "text-(--white)" : "text-gray-600"
+                              }`}
+                            ></i>
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={link.href}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setOpenDropdowns({});
+                    }}
+                    className={`block py-3 px-4 rounded-lg font-medium transition-all ${
+                      darkMode
+                        ? "text-(--white) hover:bg-(--text-light) hover:text-(--prim-color)"
+                        : "text-gray-900 hover:bg-gray-100 hover:text-indigo-600"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </nav>
         </div>
       </div>
     </>

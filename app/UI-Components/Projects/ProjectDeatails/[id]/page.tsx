@@ -17,7 +17,7 @@ export default function ProjectDetails() {
   if (!project) {
     return (
       <div className="text-center text-gray-400 py-20 text-2xl">
-        Project not found.
+        Projet introuvable.
       </div>
     );
   }
@@ -28,7 +28,7 @@ export default function ProjectDetails() {
           <div className="flex">
             <Link href="/" className="text-(--text-light)">
               <i className="bi bi-house text-white me-2 px-2 py-1 rounded-full bg-(--prim-color)"></i>
-              Home
+              Accueil
             </Link>
             <span className="mx-2">
               <i className="ri-arrow-right-wide-line text-(--text-white)"></i>
@@ -37,7 +37,7 @@ export default function ProjectDetails() {
               href="/UI-Components/Projects/Project"
               className="text-(--text-light)"
             >
-              <h2 className="text-(--text-light)">Projects</h2>
+              <h2 className="text-(--text-light)">Projets</h2>
             </Link>
             <span className="mx-2">
               <i className="ri-arrow-right-wide-line text-(--text-white)"></i>
@@ -64,19 +64,19 @@ export default function ProjectDetails() {
                   </h1>
                   <div className="mt-5 border-t border-(--light-border) pt-5 space-y-3">
                     <h3 className="text-2xl font-semibold text-(--white) NotoSerif">
-                      Project Overview
+                      Aperçu du projet
                     </h3>
                     <p className="text-(--text-light) text-base leading-relaxed">
-                      This project represents a creative exploration of design
-                      and innovation. From concept to execution, the focus was
-                      on delivering crafted to ensure brand alignment and
-                      digital impact.
+                      Ce projet représente une exploration créative du design et
+                      de l'innovation. Du concept à la réalisation, l'objectif
+                      était de livrer un travail soigné, aligné avec l'identité
+                      de marque et l'impact digital.
                     </p>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                     <div>
                       <h4 className="text-xl font-semibold text-(--white) mb-2 NotoSerif">
-                        Tools Used
+                        Outils utilisés
                       </h4>
                       <ul className="text-(--text-light) list-disc list-inside space-y-1">
                         <li>Illustrator</li>
@@ -86,14 +86,14 @@ export default function ProjectDetails() {
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold text-(--white) mb-2 NotoSerif">
-                        Project Type
+                        Type de projet
                       </h4>
                       <p className="text-(--text-light)">
-                        Graphic Desing / Creative Artwork
+                        Design graphique / Création artistique
                       </p>
 
                       <h4 className="text-xl font-semibold text-(--white) mb-2 NotoSerif">
-                        Completion Dte
+                        Date de livraison
                       </h4>
                       <p className="text-(--text-light)">Septembre 2025</p>
                     </div>
@@ -103,17 +103,13 @@ export default function ProjectDetails() {
             </div>
             <div className="mt-10 ">
               <h1 className="NotoSerif text-(--text-light) text-5xl font-bold mb-4">
-                Project Details
+                Détails du projet
               </h1>
               <p className="text-(--text-light) text-lg mb-3">
-                Thirty there & time wear across days, make inside on these you.
-                Can young a really, roses blog small of song their dreamy life
-                pretty? Because really duo living to noteworthy bloom bell.
-                Transform clean daydreaming cute twenty process rooms cool.
-                White white dreamy dramatically place everything although. Place
-                out apartment afternoon whimsical kinder, little romantic joy we
-                flowers handmade. Thirty she a studio of she whimsical projects,
-                afternoon effect going an floated maybe.
+                Chaque détail de ce projet a été pensé pour offrir une expérience
+                visuelle cohérente et impactante. De la conception à la mise en
+                ligne, la priorité a été donnée à la qualité, à l'élégance et à
+                l'alignement avec les objectifs du client.
               </p>
               <p className="text-(--text-light) text-lg mb-3">
                 Tortor placerat bibendum consequat sapien, facilisi facilisi
@@ -145,21 +141,16 @@ export default function ProjectDetails() {
             </div>
             <div className="flex items-center justify-center my-5 ">
               <h1 className="NotoSerif text-(--text-light) text-2xl font-bold mb-4">
-                The brand identity
+                L'identité de marque
               </h1>
             </div>
             <h1 className="NotoSerif text-(--text-light) text-5xl font-bold mb-4">
-              Hire Me
+              Engagez-moi
             </h1>
             <p className="text-(--text-light) text-lg mb-3 border-b border-(--light-border) pb-5">
-              Thirty there & time wear across days, make inside on these you.
-              Can young a really, roses blog small of song their dreamy life
-              pretty? Because really duo living to noteworthy bloom bell.
-              Transform clean daydreaming cute twenty process rooms cool. White
-              white dreamy dramatically place everything although. Place out
-              apartment afternoon whimsical kinder, little romantic joy we
-              flowers handmade. Thirty she a studio of she whimsical projects,
-              afternoon effect going an floated maybe.
+              Vous avez un projet en tête ? Discutons ensemble de vos besoins et
+              créons quelque chose d'unique, adapté à votre vision et à vos
+              objectifs.
             </p>
 
             <div className="flex items-center flex-wrap gap-5 mt-6">
@@ -167,13 +158,13 @@ export default function ProjectDetails() {
                 <h2 className="NotoSerif text-xl text-(--text-light)">#Nature</h2>
               </div>
               <div className="tag-card flex items-center gap-3 p-5 px-4 py-2 rounded-2xl bg-(--bg-color) border  border-(--light-border)">
-                <h2 className="NotoSerif text-xl text-(--text-light)">#Beauty</h2>
+                <h2 className="NotoSerif text-xl text-(--text-light)">#Beauté</h2>
               </div>
               <div className="tag-card flex items-center gap-3 p-5 px-4 py-2 rounded-2xl bg-(--bg-color) border  border-(--light-border)">
-                <h2 className="NotoSerif text-xl text-(--text-light)">#Travel Tips</h2>
+                <h2 className="NotoSerif text-xl text-(--text-light)">#ConseilsVoyage</h2>
               </div>
               <div className="tag-card flex items-center gap-3 p-5 px-4 py-2 rounded-2xl bg-(--bg-color) border  border-(--light-border)">
-                <h2 className="NotoSerif text-xl text-(--text-light)">#House</h2>
+                <h2 className="NotoSerif text-xl text-(--text-light)">#Maison</h2>
               </div>
             </div>
           
@@ -182,22 +173,22 @@ export default function ProjectDetails() {
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border) mb-4">
                 <div className="title mb-5">
                     <div className="title mb-5 recent-post-title">
-                        <h1 className="NotoSerif font-bold text-2xl">Project information</h1>
+                        <h1 className="NotoSerif font-bold text-2xl">Informations du projet</h1>
                         <div>
                             <div className="text-(--text-light) border-b border-(--light-border) pb-3 mb-5">
-                                <h2 className="text-(--white) NotoSerif uppercase">CATEGORY</h2>
-                                <p>Graphic Design, Marketing Kitsz</p>
+                                <h2 className="text-(--white) NotoSerif uppercase">Catégorie</h2>
+                                <p>Design graphique, kits marketing</p>
                             </div>
                             <div className="text-(--text-light) border-b border-(--light-border) pb-3 mb-5">
-                                <h2 className="text-(--white) NotoSerif uppercase">CLIENT</h2>
-                                <p>Orion Coporation</p>
+                                <h2 className="text-(--white) NotoSerif uppercase">Client</h2>
+                                <p>Orion Corporation</p>
                             </div>
                             <div className="text-(--text-light) border-b border-(--light-border) pb-3 mb-5">
-                                <h2 className="text-(--white) NotoSerif uppercase">PROJECT DATE</h2>
-                                <p>01 Janvier 2026</p>
+                                <h2 className="text-(--white) NotoSerif uppercase">Date du projet</h2>
+                                <p>01 janvier 2026</p>
                             </div>
                             <div className="text-(--text-light) border-b border-(--light-border) pb-3 mb-5">
-                                <h2 className="text-(--white) NotoSerif uppercase">PROJECT URL</h2>
+                                <h2 className="text-(--white) NotoSerif uppercase">URL du projet</h2>
                                 <p>www.dcotech.com</p>
                             </div>
                         </div>

@@ -24,21 +24,21 @@ const CommentsData = [
     id: "1",
     pere: "“Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far“",
     name: "George Orwell",
-    date: "17 April 2025",
+    date: "17 avril 2025",
     author: Author1,
   },
   {
     id: "2",
     pere: "“Nullam sit amet orci velit. Integer at rhoncus eros. Etiam vulputate eros quis gravida maximus. Pellentesque habitant morbi tristique senectus et netus et“",
     name: "Maya Angelou",
-    date: "25 April 2025",
+    date: "25 avril 2025",
     author: Author2,
   },
   {
     id: "3",
     pere: "“Morbi ligula nisi, finibus vel felis vitae, fringilla mollis leo. In pellentesque laoreet enim, tempor interdum est blandit a. Integer convallis et est et fringilla“",
     name: "George Orwell",
-    date: "05 May 2025",
+    date: "05 mai 2025",
     author: Author3,
   },
 ];
@@ -58,15 +58,15 @@ const GalleryData = [
 export default function RecentPosts() {
   return (
     <>
-      <div className="px-[8%] lg:px-[16%] pb-10 text-(--white)">
-        <div className="flex flex-col lg:flex-row justify-between gap-5">
-          <div className="w-full lg:w-1/1 static lg:sticky top-0 left-0 h-full">
-            <div className="title mb-10">
-              <h1 className="NotoSerif font-bold text-6xl md:text-7xl">
-                Recent posts
+      <div className="section-container pb-8 lg:pb-10 text-(--white)">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-5">
+          <div className="w-full lg:flex-1 static lg:sticky top-0 left-0 h-full">
+            <div className="title mb-8 sm:mb-10">
+              <h1 className="section-title">
+                Articles récents
               </h1>
-              <p className="text-(--text-light) text-lg NotoSerif mt-4 ">
-                Do not miss the latest trends
+              <p className="section-subtitle NotoSerif mt-3 sm:mt-4">
+                Ne manquez pas les dernières tendances
               </p>
             </div>
             {RecentPostsData.map((post, index) => (
@@ -88,7 +88,7 @@ export default function RecentPosts() {
                     <span className="bg-(--bg-color) border border-(--light-border) NotoSerif font-bold rounded-full px-4 py-2">
                       {post.subtag}
                     </span>
-                    <h2 className="mt-5 mb-3 NotoSerif  font-bold text-4xl hover:text-(--prim-color) cursor-pointer">
+                    <h2 className="mt-4 sm:mt-5 mb-3 NotoSerif font-bold text-2xl sm:text-3xl lg:text-4xl hover:text-(--prim-color) cursor-pointer">
                       {post.title}
                     </h2>
                     <p className="text-(--text-light)">{post.pere}</p>
@@ -114,22 +114,22 @@ export default function RecentPosts() {
             {/* Popular Post */}
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border) mb-4">
               <div className="title mb-5 recent-post-title">
-                <h1 className="NotoSerif font-bold text-6xl md:text-2xl">
-                  Popular Posts
-                </h1>
+                <h2 className="NotoSerif font-bold text-xl sm:text-2xl">
+                  Articles populaires
+                </h2>
               </div>
               {RecentPostsData.map((post, index) => (
                 <div
                   key={index}
                   className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-2"
                 >
-                  <div className="w-1/3">
+                  <div className="w-full sm:w-1/3 shrink-0">
                     <Image
                       src={post.image}
                       alt={post.title}
                       width={80}
                       height={80}
-                      className="rounded-md md:rounded-full object-center"
+                      className="rounded-md sm:rounded-full object-cover w-full sm:w-20 h-auto sm:h-20"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -153,9 +153,9 @@ export default function RecentPosts() {
             {/* Last Comment */}
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border) mb-4">
               <div className="title mb-5 recent-post-title">
-                <h1 className="NotoSerif font-bold text-6xl md:text-2xl">
-                  Lasts Comment
-                </h1>
+                <h2 className="NotoSerif font-bold text-xl sm:text-2xl">
+                  Derniers commentaires
+                </h2>
               </div>
               {CommentsData.map((comment, index) => (
                 <div key={index} className="mb-3">
@@ -190,7 +190,7 @@ export default function RecentPosts() {
                   Dco<span className="text-(--white)">Tech</span>
                 </Link>
                 <h2 className="text-(--text-light) NotoSerif font-bold">
-                  Follow us on instagram
+                  Suivez-nous sur Instagram
                 </h2>
               </div>
               <div className="my-3 grid grid-cols-3 gap-3">

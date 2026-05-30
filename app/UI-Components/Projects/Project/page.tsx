@@ -29,43 +29,43 @@ import partner5 from "@/public/partner5.svg";
 import projects from "@/app/JsonData/Projects.json";
 
 const tabs = [
-  { id: "all projects", label: "All Projects" },
-  { id: "web development", label: "Web Development" },
-  { id: "mobile app", label: "Mobile App" },
+  { id: "all projects", label: "Tous les projets" },
+  { id: "web development", label: "Développement web" },
+  { id: "mobile app", label: "Application mobile" },
   { id: "motion", label: "Motion" },
-  { id: "graphic design", label: "Graphic Design" },
+  { id: "graphic design", label: "Design graphique" },
 ];
 
 const service = [
   {
     Icon: serviceIcon1,
-    name: "Motion & web Graphy",
-    pere: "NetTracking is a very powerful Web 2.0 site search engine allows you to find email allerts",
+    name: "Motion & web design",
+    pere: "Des animations fluides et un design web moderne pour captiver vos visiteurs.",
   },
   {
     Icon: serviceIcon2,
-    name: "UI/Ux Consultancy",
-    pere: "NetTracking is a very powerful Web 2.0 site search engine allows you to find email allerts",
+    name: "Conseil UI/UX",
+    pere: "Une expérience utilisateur optimisée pour des interfaces intuitives et efficaces.",
   },
   {
     Icon: serviceIcon3,
     name: "Branding & Design",
-    pere: "NetTracking is a very powerful Web 2.0 site search engine allows you to find email allerts",
+    pere: "Une identité visuelle forte et cohérente pour valoriser votre marque.",
   },
   {
     Icon: serviceIcon4,
-    name: "Product Photography",
-    pere: "NetTracking is a very powerful Web 2.0 site search engine allows you to find email allerts",
+    name: "Photographie produit",
+    pere: "Des visuels professionnels qui mettent en valeur vos produits et services.",
   },
   {
     Icon: serviceIcon5,
-    name: "Key Seo Optimization",
-    pere: "NetTracking is a very powerful Web 2.0 site search engine allows you to find email allerts",
+    name: "Optimisation SEO",
+    pere: "Améliorez votre visibilité sur les moteurs de recherche et attirez plus de trafic.",
   },
   {
     Icon: serviceIcon6,
-    name: "Social Management",
-    pere: "NetTracking is a very powerful Web 2.0 site search engine allows you to find email allerts",
+    name: "Gestion des réseaux sociaux",
+    pere: "Développez votre présence en ligne et engagez votre communauté.",
   },
 ];
 
@@ -118,21 +118,21 @@ export default function Project() {
           <div className="flex">
             <Link href="/" className="text-(--text-light)">
               <i className="bi bi-house text-white me-2 px-2 py-1 rounded-full bg-(--prim-color)"></i>
-              Home
+              Accueil
             </Link>
             <span className="mx-0">
               <i className="ri-arrow-right-wide-line text-(--text-white)"></i>
             </span>
-            <h2 className="text-(--text-light)">Projects</h2>
+            <h2 className="text-(--text-light)">Projets</h2>
           </div>
         </div>
         <div className="title flex flex-col justify-center items-center">
           <h1 className="text-5xl mb-5 leading-15 NotoSerif font-bold">
-            My Latest Projects
+            Mes derniers projets
           </h1>
           <p className="text-xl text-(--text-light) text-center lg:w-[60%] mb-10 NotoSerif">
-            The convention is the main event of the year for professionals in
-            the world of design and architecture.
+            Le rendez-vous incontournable de l'année pour les professionnels du
+            design et de l'architecture.
           </p>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap justify-center gap-5">
@@ -306,10 +306,11 @@ export default function Project() {
       {/* Services */}
       <div className="px-[8%] lg:px-[16%] py-15">
         <div className="title flex flex-col items-center justify-center">
-          <h1 className="NotoSerif font-bold text-5xl mb-5">My Services</h1>
+          <h1 className="NotoSerif font-bold text-5xl mb-5">Mes services</h1>
           <p className="text-xl text-(--text-light) NotoSerif text-center lg:w-[58%] mb-10">
-            With many years of experience in the field of Digital Marketing, I
-            am confident to bring you many outstanding values.
+            Fort de plusieurs années d'expérience dans le marketing digital, je
+            suis confiant de pouvoir vous apporter de nombreuses valeurs
+            exceptionnelles.
           </p>
         </div>
         <div className="bg-(--bg-color) rounded-2xl p-15">
@@ -340,10 +341,10 @@ export default function Project() {
       {/* Testimonial */}
       <div className="px-[8%] lg:px-[16%] py-15">
         <div className="title flex flex-col items-center justify-center">
-          <h1 className="NotoSerif font-bold text-5xl mb-5">Testimonials</h1>
+          <h1 className="NotoSerif font-bold text-5xl mb-5">Témoignages</h1>
           <p className="text-xl text-(--text-light) NotoSerif text-center mb-10">
-            Nettracking is a B2B marketing software for telecommunications
-            industry.
+            DcoTech est une solution digitale dédiée aux professionnels du web
+            et du design.
           </p>
         </div>
         <div className="w-full testi-swiper">
@@ -402,7 +403,7 @@ export default function Project() {
       {/* Partners */}
        <div className="px-[8%] lg:px-[16%] py-15">
         <div className="title flex flex-col items-center justify-center">
-          <h1 className="NotoSerif font-bold text-5xl lg:w-[80%] leading-15 text-center mb-5">Content publishing cooperation with my partners</h1>
+          <h1 className="NotoSerif font-bold text-5xl lg:w-[80%] leading-15 text-center mb-5">Coopération éditoriale avec mes partenaires</h1>
         </div>
         <Swiper
             modules={[Autoplay]}

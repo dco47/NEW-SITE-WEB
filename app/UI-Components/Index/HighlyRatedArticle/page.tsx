@@ -7,13 +7,13 @@ import ArticlesData from "@/app/JsonData/Blogs.json";
 
 export default function HighlyRatedArticl() {
   return (
-    <div className="px-[8%] lg:px-[16%] py-10 text-(--white)">
+    <div className="section-container section-py text-(--white)">
       <div className="title">
-        <h1 className="NotoSerif font-bold text-6xl md:text-7xl mt-4">
-          Editors picked
+        <h1 className="section-title mt-2 sm:mt-4">
+          Sélection de la rédaction
         </h1>
-        <p className="text-(--text-light) text-lg NotoSerif mt-4 ">
-          Featured and highly rated articles
+        <p className="section-subtitle NotoSerif mt-3 sm:mt-4">
+          Articles à la une et les mieux notés
         </p>
       </div>
 
@@ -66,7 +66,7 @@ export default function HighlyRatedArticl() {
                         href={`/UI-Components/Blogs/blogDetails/${article.id}`}
                         className="link-btn text-(--white) Notoserif "
                       >
-                        Read More
+                        Lire la suite
                       </Link>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function HighlyRatedArticl() {
                         href={`/UI-Components/Blogs/blogDetails/${article.id}`}
                         className="link-btn text-(--white) Notoserif "
                       >
-                        Read More
+                        Lire la suite
                       </Link>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ export default function HighlyRatedArticl() {
         <div className="flex items-center justify-center my-10">
             <Link href="/UI-Components/Blogs/blog">
                 <button className="bg-linear-to-r from-indigo-500 to-purple-600 text-white font-medium px-5 py-2 rounded-lg shadow-md hover:from-indigo-600 hover:to-purple-700 transition-all cursor-pointer">
-                    View More !
+                    Voir plus
                 </button>
             </Link>
         </div>

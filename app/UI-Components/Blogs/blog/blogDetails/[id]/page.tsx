@@ -60,42 +60,15 @@ const GalleryData = [
 ];
 
 const PopularTag = [
-   {
-        id:"1",
-        name: "Technology",
-   },
-   {
-        id:"2",
-        name: "Travel",
-   },
-   {
-        id:"3",
-        name: "Interior",
-   },
-   {
-        id:"4",
-        name: "Minimal",
-   },
-   {
-        id:"5",
-        name: "Plant",
-   },
-   {
-        id:"6",
-        name: "Nature",
-   },
-   {
-        id:"7",
-        name: "Business",
-   },
-   {
-        id:"8",
-        name: "Animal",
-   },
-   {
-        id:"9",
-        name: "Healthy",
-   },
+  { id: "1", name: "Technologie" },
+  { id: "2", name: "Voyage" },
+  { id: "3", name: "Intérieur" },
+  { id: "4", name: "Minimal" },
+  { id: "5", name: "Plante" },
+  { id: "6", name: "Nature" },
+  { id: "7", name: "Affaires" },
+  { id: "8", name: "Animal" },
+  { id: "9", name: "Santé" },
 ];
 
 export default function BlogDetails() {
@@ -105,7 +78,7 @@ export default function BlogDetails() {
   if (!blog) {
     return (
       <div className="text-center py-20 text-gray-400 text-2xl">
-        Blog not found.
+        Blog introuvable.
       </div>
     );
   }
@@ -116,7 +89,7 @@ export default function BlogDetails() {
           <div className="flex items-center">
             <Link href="/" className="text-(--text-light)">
               <i className="bi bi-house text-white me-2 px-2 py-1 rounded-full bg-(--prim-color)"></i>
-              Home
+              Accueil
             </Link>
             <span className="mx-2">
               <i className="ri-arrow-right-wide-line text-white"></i>
@@ -157,11 +130,10 @@ export default function BlogDetails() {
               </div>
             </div>
             <p className="text-(--text-light) text-xl mt-5">
-              The fancy moon going in little artist painting. Thirty days of
-              lavender in the dreamy light inside. Other perfect oh plants, for
-              and again. I’ve honey feeling. Caring dreamland projects
-              noteworthy than minimal, their it oh pretty feeling may. Include
-              pink be.
+              La lune scintillante éclaire la toile de l'artiste. Trente jours
+              de lavande baignés d'une lumière onirique. Des plantes délicates,
+              une douceur particulière. Chaque projet est pensé avec soin pour
+              créer une expérience visuelle mémorable.
             </p>
             <div className="mt-5">
               <Image
@@ -180,17 +152,14 @@ export default function BlogDetails() {
               odio porta. Egestas mauris placerat leo phasellu s ut sit.
             </p>
             <h2 className="NotoSerif text-5xl font-bold text-(--text-light) my-5">
-              Use your headings
+              Utilisez vos titres
             </h2>
             <p className="text-(--text-light) text-xl mt-5">
-              Thirty there & time wear across days, make inside on these you.
-              Can young a really, roses blog small of song their dreamy life
-              pretty? Because really duo living to noteworthy bloom bell.
-              Transform clean daydreaming cute twenty process rooms cool. White
-              white dreamy dramatically place everything although. Place out
-              apartment afternoon whimsical kinder, little romantic joy we
-              flowers handmade. Thirty she a studio of she whimsical projects,
-              afternoon effect going an floated maybe.
+              Le temps passe, les jours s'enchaînent, et chaque détail compte.
+              Un blog peut transformer une idée simple en une histoire
+              captivante. L'élégance réside dans la simplicité, la créativité
+              dans les petits gestes. Chaque projet est une invitation à rêver,
+              à explorer et à s'inspirer.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-2 gap-5 mt-5">
               <div>
@@ -214,17 +183,13 @@ export default function BlogDetails() {
               </div>
             </div>
             <h2 className="NotoSerif text-5xl font-bold text-(--text-light) my-5">
-              Smaller heading
+              Sous-titre
             </h2>
             <p className="text-(--text-light) text-lg mb-3 border-b border-(--light-border) pb-5">
-              Thirty there & time wear across days, make inside on these you.
-              Can young a really, roses blog small of song their dreamy life
-              pretty? Because really duo living to noteworthy bloom bell.
-              Transform clean daydreaming cute twenty process rooms cool. White
-              white dreamy dramatically place everything although. Place out
-              apartment afternoon whimsical kinder, little romantic joy we
-              flowers handmade. Thirty she a studio of she whimsical projects,
-              afternoon effect going an floated maybe.
+              Structurer un contenu avec des titres clairs améliore la lecture
+              et guide le visiteur. Chaque section apporte une nouvelle
+              perspective, chaque paragraphe enrichit le récit. C'est ainsi que
+              naît une expérience de lecture fluide et agréable.
             </p>
             <div className="flex items-center flex-wrap gap-5 mt-6">
               <div className="tag-card flex items-center gap-3 px-4 py-2 rounded-xl bg-(--bg-color) border border-(--light-border)">
@@ -234,17 +199,17 @@ export default function BlogDetails() {
               </div>
               <div className="tag-card flex items-center gap-3 px-4 py-2 rounded-xl bg-(--bg-color) border border-(--light-border)">
                 <h2 className="NotoSerif text-xl text-(--text-light)">
-                  #Beauty
+                  #Beauté
                 </h2>
               </div>
               <div className="tag-card flex items-center gap-3 px-4 py-2 rounded-xl bg-(--bg-color) border border-(--light-border)">
                 <h2 className="NotoSerif text-xl text-(--text-light)">
-                  #Travel Tips
+                  #ConseilsVoyage
                 </h2>
               </div>
               <div className="tag-card flex items-center gap-3 px-4 py-2 rounded-xl bg-(--bg-color) border border-(--light-border)">
                 <h2 className="NotoSerif text-xl text-(--text-light)">
-                  #House
+                  #Maison
                 </h2>
               </div>
             </div>
@@ -254,7 +219,7 @@ export default function BlogDetails() {
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border) mb-4">
               <div className="title mb-5 recent-post-title">
                 <h1 className="NotoSerif font-bold text-6xl md:text-2xl">
-                  Lasts Comment
+                  Derniers commentaires
                 </h1>
               </div>
               {CommentsData.map((comment, index) => (
@@ -290,7 +255,7 @@ export default function BlogDetails() {
                   Dco<span className="text-(--white)">Tech</span>
                 </Link>
                 <h2 className="text-(--text-light) NotoSerif font-bold">
-                  Follow us on instagram
+                  Suivez-nous sur Instagram
                 </h2>
               </div>
               <div className="my-3 grid grid-cols-3 gap-3">
@@ -307,7 +272,7 @@ export default function BlogDetails() {
             {/* Popular Tags */}
             <div className="p-5 rounded-2xl bg-(--bg-color) border border-(--light-border)">
                 <div className="title mb-5 recent-post-title">
-                    <h1 className=" NotoSerif font-bold text-6xl md:text-2xl">Popular Tags</h1>
+                    <h1 className=" NotoSerif font-bold text-6xl md:text-2xl">Tags populaires</h1>
                 </div>
                 <div className="flex items-center flex-wrap gap-3 mt-6">
                     {PopularTag.map((tag, index) => (

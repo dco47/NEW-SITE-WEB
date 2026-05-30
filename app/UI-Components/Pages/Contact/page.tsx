@@ -14,7 +14,7 @@ export default function Contact() {
           <div className="flex">
             <Link href="/" className="text-(--text-light)">
               <i className="bi bi-house text-white me-2 px-2 py-1 rounded-full bg-(--prim-color)"></i>
-              Home
+              Accueil
             </Link>
             <span className="mx-2">
               <i className="ri-arrow-right-wide-line text-(--white)"></i>
@@ -25,27 +25,26 @@ export default function Contact() {
         <div className="title-section flex flex-col justify-center items-center">
           <div className="title">
             <h1 className="text-6xl mb-5 Notoserif font-bold text-(--prim-color)">
-              Contact Us
+              Contactez-nous
             </h1>
           </div>
           <p className="text-xl text-(--text-light) text-center lg:w-[80%]">
-            We are AliThemes , a creative and dedicated group of individuals who
-            love web development almost as much as we love our customers. We are
-            passionate team with the mission for achieving the perfection in web
-            design. All designs are made by love with pixel perfect design and
-            excellent coding quality. Speed, security and SEO friendly alway in
-            our mind.
+            Nous sommes DcoTech, une équipe créative et passionnée qui aime le
+            développement web autant que nos clients. Notre mission : atteindre
+            l'excellence en design web. Chaque création est pensée avec soin,
+            un design pixel perfect et une qualité de code irréprochable.
+            Performance, sécurité et référencement sont toujours nos priorités.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
             <div className="contact-info flex gap-2">
-              <Image src={conIcon1} alt="contact-Icon1" />
+              <Image src={conIcon1} alt="Icône téléphone" />
               <div className="contact-text">
                 <p className="text-(--text-light)">(+225) 0757985147</p>
                 <p className="text-(--text-light)">(+225) 0757985147</p>
               </div>
             </div>
             <div className="contact-info flex gap-2">
-              <Image src={conIcon2} alt="contact-Icon1" />
+              <Image src={conIcon2} alt="Icône e-mail" />
               <div className="contact-text">
                 <p className="text-(--text-light)">
                   djablechristian0@gmail.com
@@ -56,9 +55,9 @@ export default function Contact() {
               </div>
             </div>
             <div className="contact-info flex gap-2">
-              <Image src={conIcon3} alt="contact-Icon1" />
+              <Image src={conIcon3} alt="Icône adresse" />
               <div className="contact-text">
-                <p className="text-(--text-light)">Angré chateau</p>
+                <p className="text-(--text-light)">Angré château</p>
                 <p className="text-(--text-light)">Abidjan 01</p>
               </div>
             </div>
@@ -80,11 +79,11 @@ export default function Contact() {
         <div className="flex items-center justify-center text-center">
           <div className="title">
             <h1 className="text-5xl leading-25 md:text-7xl mb-5 Notoserif font-bold text-(--prim-color)">
-              Drop Us a Line
+              Écrivez-nous
             </h1>
             <p className="text-(--text-light) text-lg Notoserif">
-              Your email address will not be published. Required fields are
-              marked *
+              Votre adresse e-mail ne sera pas publiée. Les champs obligatoires
+              sont marqués *
             </p>
           </div>
         </div>
@@ -94,14 +93,14 @@ export default function Contact() {
               <input
                 type="text"
                 className="border px-4 py-5 border-gray-600 w-full focus:outline-none rounded-md"
-                placeholder="Your Name *"
+                placeholder="Votre nom *"
               />
             </div>
             <div className="email-details">
               <input
                 type="email"
                 className="border px-4 py-5 border-gray-600 w-full focus:outline-none rounded-md"
-                placeholder="Email *"
+                placeholder="E-mail *"
               />
             </div>
           </div>
@@ -111,14 +110,14 @@ export default function Contact() {
               <input
                 type="number"
                 className="border px-4 py-5 border-gray-600 w-full focus:outline-none rounded-md"
-                placeholder="Phone Number *"
+                placeholder="Numéro de téléphone *"
               />
             </div>
             <div className="subject-details">
               <input
                 type="text"
                 className="border px-4 py-5 border-gray-600 w-full focus:outline-none rounded-md"
-                placeholder="Subject *"
+                placeholder="Sujet *"
               />
             </div>
           </div>
@@ -132,7 +131,7 @@ export default function Contact() {
           ></textarea>
           <div className="flex items-center justify-center my-10">
             <button className="bg-linear-to-r from-indigo-500 to-purple-600 text-white font-medium px-5 py-2 rounded-lg shadow-md hover:from-indigo-600 hover:to-purple-700 transition-all cursor-pointer">
-              Send Message <i className="bi bi-arrow-right-short"></i>
+              Envoyer le message <i className="bi bi-arrow-right-short"></i>
             </button>
           </div>
         </div>

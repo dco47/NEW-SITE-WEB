@@ -1,89 +1,82 @@
 [
-    {
-        "id": "1",
-        "title": "Are You Ready To Go Home After The Sunset View?",
-        "tag": "#Lifestyle",
-        "time": "5 mins read",
-        "name": "Joseph",
-        "date": "25 April 2025",
-        "image": "/highly-rated-articles1.webp",
-        "author": "/author1.webp"
-    },
-
-    {
-        "id": "2",
-        "title": "10 Easy Ways to Be Environmentally Conscious",
-        "tag": "#Travel",
-        "time": "7 mins read",
-        "name": "Rose",
-        "date": "12 May 2025",
-        "image": "/highly-rated-articles2.webp",
-        "author": "/author1.webp"
-    },
-
-    {
-        "id": "3",
-        "title": "How to Give Your Space a Parisian-Inspired Makeover",
-        "tag": "#Desing",
-        "time": "12 mins read",
-        "name": "Steven",
-        "date": "15 May 2025",
-        "image": "/highly-rated-articles3.webp",
-        "author": "/author2.webp"
-    },
-
-    {
-        "id": "4",
-        "title": "Facts About Business That Will Help You Success",
-        "tag": "#Desing",
-        "time": "89 mins read",
-        "name": "Harry",
-        "date": "27 June 2025",
-        "image": "/highly-rated-articles4.webp",
-        "author": "/author3.webp"
-    },
-
-    {
-        "id": "5",
-        "title": "The 60 Things To Do About Buiding A Plan",
-        "tag": "#Desing",
-        "time": "35 mins read",
-        "name": "Roney",
-        "date": "28 April 2025",
-        "image": "/highly-rated-articles5.webp",
-        "author": "/author4.webp"
-    },
-
-    {
-        "id": "6",
-        "title": "Master The Art Of Nature With These 7 Tips",
-        "tag": "#Travel",
-        "time": "3 mins read",
-        "name": "Joseph",
-        "date": "25 April 2025",
-        "image": "/highly-rated-articles6.webp",
-        "author": "/author4.webp"
-    },
-
-    {
-        "id": "7",
-        "title": "Your Light Is About To Stop Being Relevant",
-        "tag": "#Travel",
-        "time": "5 mins read",
-        "name": "Jeny",
-        "date": "25 April 2025",
-        "image": "/highly-rated-articles7.webp",
-        "author": "/author5.webp"
-    },
-
-    {
-        "id": "8",
-        "title": "Your Light Is About To Stop Being Relevant",
-        "tag": "#Travel",
-        "time": "8 mins read",
-        "name": "toby",
-        "date": "28 April 2025",
-        "image": "/highly-rated-articles8.webp",
-        "author": "/author2.webp"
-    }
+  {
+    "id": "1",
+    "title": "Êtes-vous prêt à rentrer après le coucher du soleil ?",
+    "tag": "#ModeDeVie",
+    "time": "5 min de lecture",
+    "name": "Joseph",
+    "date": "25 avril 2025",
+    "image": "/highly-rated-articles1.webp",
+    "author": "/author1.webp"
+  },
+  {
+    "id": "2",
+    "title": "10 façons simples d'être respectueux de l'environnement",
+    "tag": "#Voyage",
+    "time": "7 min de lecture",
+    "name": "Rose",
+    "date": "12 mai 2025",
+    "image": "/highly-rated-articles2.webp",
+    "author": "/author1.webp"
+  },
+  {
+    "id": "3",
+    "title": "Comment donner à votre intérieur une touche parisienne",
+    "tag": "#Design",
+    "time": "12 min de lecture",
+    "name": "Steven",
+    "date": "15 mai 2025",
+    "image": "/highly-rated-articles3.webp",
+    "author": "/author2.webp"
+  },
+  {
+    "id": "4",
+    "title": "Des faits sur les affaires qui vous aideront à réussir",
+    "tag": "#Design",
+    "time": "89 min de lecture",
+    "name": "Harry",
+    "date": "27 juin 2025",
+    "image": "/highly-rated-articles4.webp",
+    "author": "/author3.webp"
+  },
+  {
+    "id": "5",
+    "title": "Les 60 choses à faire pour construire un plan solide",
+    "tag": "#Design",
+    "time": "35 min de lecture",
+    "name": "Roney",
+    "date": "28 avril 2025",
+    "image": "/highly-rated-articles5.webp",
+    "author": "/author4.webp"
+  },
+  {
+    "id": "6",
+    "title": "Maîtrisez l'art de la nature avec ces 7 conseils",
+    "tag": "#Voyage",
+    "time": "3 min de lecture",
+    "name": "Joseph",
+    "date": "25 avril 2025",
+    "image": "/highly-rated-articles6.webp",
+    "author": "/author4.webp"
+  },
+  {
+    "id": "7",
+    "title": "Votre lumière est sur le point de perdre de sa pertinence",
+    "tag": "#Voyage",
+    "time": "5 min de lecture",
+    "name": "Jeny",
+    "date": "25 avril 2025",
+    "image": "/highly-rated-articles7.webp",
+    "author": "/author5.webp"
+  },
+  {
+    "id": "8",
+    "title": "Votre lumière est sur le point de perdre de sa pertinence",
+    "tag": "#Voyage",
+    "time": "8 min de lecture",
+    "name": "Toby",
+    "date": "28 avril 2025",
+    "image": "/highly-rated-articles8.webp",
+    "author": "/author2.webp"
+  }
 ]

@@ -7,12 +7,12 @@ import PopularTags from "../../Index/PopularTags/page";
 export default function Blog() {
   return (
     <>
-      <div className="px-[8%] lg:px-[16%] py-10">
-        <div className="heading border-b border-(--light-border) pb-5 px-5">
-          <div className="flex">
+      <div className="section-container section-py">
+        <div className="heading border-b border-(--light-border) pb-5 px-2 sm:px-5">
+          <div className="breadcrumb-bar">
             <Link href="/" className="text-(--text-light)">
               <i className="bi bi-house text-white me-2 px-2 py-1 rounded-full bg-(--prim-color)"></i>
-              Home
+              Accueil
             </Link>
             <span className="mx-2">
               <i className="ri-arrow-right-wide-line text-(--white)"></i>
@@ -21,7 +21,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {ArticlesData.slice(0, 2).map((article, index) => (
               <div className="" key={index}>
                 <Link href={`/UI-Components/Blogs/blogDetails/${article.id}`}>
@@ -44,33 +44,30 @@ export default function Blog() {
                           <i className="bi bi-clock-history"></i> {article.time}
                         </span>
                       </div>
-                      <h2 className="NotoSerif text-3xl font-bold my-5 group-hover:text-(--prim-color)">
+                      <h2 className="NotoSerif text-2xl sm:text-3xl font-bold my-4 sm:my-5 group-hover:text-(--prim-color)">
                         {article.title}
                       </h2>
-                      <div className="flex justify-between items-center gap-3">
-                        <div className="flex items-center gap-3 w-auto">
+                      <div className="article-author-row">
+                        <div className="flex items-center gap-3">
                           <Image
                             src={article.author}
                             alt={article.name}
                             width={70}
                             height={70}
-                            className="rounded-full"
+                            className="rounded-full shrink-0"
                           />
-                          <div className="flex flex-col w-full">
-                            <h2 className="text-(--text-light) Notoserif font-bold text-xl">
+                          <div className="flex flex-col">
+                            <h2 className="text-(--text-light) Notoserif font-bold text-base sm:text-xl">
                               {article.name}
                             </h2>
-                            <h2 className="text-(--text-light)">
+                            <h2 className="text-(--text-light) text-sm">
                               {article.date}
                             </h2>
                           </div>
                         </div>
-                        <Link
-                          href={`/UI-Components/Blogs/blogDetails/${article.id}`}
-                          className="link-btn text-(--white) Notoserif "
-                        >
-                          Read More
-                        </Link>
+                        <span className="link-btn text-(--white) Notoserif">
+                          Lire la suite
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -79,7 +76,7 @@ export default function Blog() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6">
             {ArticlesData.slice(2, ArticlesData.length).map(
               (article, index) => (
                 <div className="" key={index}>
@@ -104,33 +101,30 @@ export default function Blog() {
                             {article.time}
                           </span>
                         </div>
-                        <h2 className="NotoSerif text-2xl font-bold my-5 text-(--text-light) group-hover:text-(--prim-color)">
+                        <h2 className="NotoSerif text-xl sm:text-2xl font-bold my-4 sm:my-5 text-(--text-light) group-hover:text-(--prim-color)">
                           {article.title}
                         </h2>
-                        <div className="flex justify-between items-center gap-3">
-                          <div className="flex items-center gap-3 w-auto">
+                        <div className="article-author-row">
+                          <div className="flex items-center gap-3">
                             <Image
                               src={article.author}
                               alt={article.name}
                               width={70}
                               height={70}
-                              className="rounded-full"
+                              className="rounded-full shrink-0"
                             />
-                            <div className="flex flex-col w-full">
-                              <h2 className="text-(--text-light) Notoserif font-bold text-xl">
+                            <div className="flex flex-col">
+                              <h2 className="text-(--text-light) Notoserif font-bold text-base sm:text-xl">
                                 {article.name}
                               </h2>
-                              <h2 className="text-(--text-light)">
+                              <h2 className="text-(--text-light) text-sm">
                                 {article.date}
                               </h2>
                             </div>
                           </div>
-                          <Link
-                            href={`/UI-Components/Blogs/blogDetails${article.id}`}
-                            className="link-btn text-(--white) Notoserif "
-                          >
-                            Read More
-                          </Link>
+                          <span className="link-btn text-(--white) Notoserif">
+                            Lire la suite
+                          </span>
                         </div>
                       </div>
                     </div>
